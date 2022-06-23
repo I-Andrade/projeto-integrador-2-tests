@@ -29,4 +29,9 @@ Requisitar todas Transportadoras
     ${RESPOSTA}    Get Request    API_AMOUR    Transportadora
     Log            ${RESPOSTA.text} 
 
-    
+Consultar produto específico
+    [Arguments]         ${PRODUTO_DESEJADO}
+    ${RESPOSTA}=        Get Request  Produto  /${PRODUTO_DESEJADO}
+    Log                 Resposta: ${RESPOSTA.text()}
+    Set Test Variable   ${RESPOSTA}
+ 

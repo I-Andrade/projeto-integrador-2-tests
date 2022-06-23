@@ -13,5 +13,6 @@ Buscar todos os clientes
 Buscar todas Formas de Pagamento
     Requisitar todas Formas de Pagamento
 
-Requisitar todas Transportadoras
+Buscar todas Transportadoras
     Requisitar todas Transportadoras
+

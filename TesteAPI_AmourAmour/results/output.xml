@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220609 01:13:16.989" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220623 00:15:22.879" rpa="false" schemaversion="2">
 <suite id="s1" name="TesteCaseAPIAmourAmour" source="C:\Users\rachi\Documents\Rachid\Estudos\Projeto_Integrador_2\projeto-integrador-2-tests\TesteAPI_AmourAmour\TesteCaseAPIAmourAmour.robot">
 <kw name="Conectar a minha API" library="ResourceAPI" type="SETUP">
 <kw name="Create Session" library="RequestsLibrary">
 <arg>API_AMOUR</arg>
 <arg>${URL_API}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<msg timestamp="20220609 01:13:17.748" level="INFO">Creating Session using : alias=API_AMOUR, url=https://amouramour-api.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
-<status status="PASS" starttime="20220609 01:13:17.748" endtime="20220609 01:13:17.749"/>
+<msg timestamp="20220623 00:15:23.855" level="INFO">Creating Session using : alias=API_AMOUR, url=https://amouramour-api.herokuapp.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220623 00:15:23.855" endtime="20220623 00:15:23.856"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:17.743" endtime="20220609 01:13:17.749"/>
+<status status="PASS" starttime="20220623 00:15:23.848" endtime="20220623 00:15:23.856"/>
 </kw>
 <test id="s1-t1" name="Buscar todos os produtos">
 <kw name="Requisitar todos produtos" library="ResourceAPI">
@@ -18,31 +18,31 @@
 <arg>API_AMOUR</arg>
 <arg>Produto</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20220609 01:13:17.750" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220609 01:13:18.459" level="INFO">GET Request : url=https://amouramour-api.herokuapp.com/Produto 
+<msg timestamp="20220623 00:15:23.859" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220623 00:15:32.067" level="INFO">GET Request : url=https://amouramour-api.herokuapp.com/Produto 
  path_url=/Produto 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20220609 01:13:18.459" level="INFO">GET Response : url=https://amouramour-api.herokuapp.com/Produto 
+<msg timestamp="20220623 00:15:32.067" level="INFO">GET Response : url=https://amouramour-api.herokuapp.com/Produto 
  status=200, reason=OK 
- headers={'Connection': 'keep-alive', 'Server': 'gunicorn', 'Date': 'Thu, 09 Jun 2022 04:13:12 GMT', 'Content-Type': 'application/json', 'Vary': 'Accept, Origin, Cookie', 'Allow': 'GET, POST, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '396', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Via': '1.1 vegur'} 
- body={"count":3,"next":null,"previous":null,"results":[{"id":3,"descricao":"teste","tamanho":"teste","cor":"teste","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"},{"id":4,"descricao":"tamaras","tamanho":"m","cor":"verde","valor_custo":10.0,"valor_venda":50.0,"obs":"nenhuma"},{"id":5,"descricao":"quadros","tamanho":"grande","cor":"verde","valor_custo":50.0,"valor_venda":100.0,"obs":"nenhuma"}]} 
+ headers={'Connection': 'keep-alive', 'Server': 'gunicorn', 'Date': 'Thu, 23 Jun 2022 03:15:32 GMT', 'Content-Type': 'application/json', 'Vary': 'Accept, Origin, Cookie', 'Allow': 'GET, POST, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '407', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Via': '1.1 vegur'} 
+ body={"count":3,"next":null,"previous":null,"results":[{"id":14,"descricao":"Calça Infantil","tamanho":"P","cor":"Verde","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"},{"id":4,"descricao":"Macacão Infantil","tamanho":"P","cor":"Verde","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"},{"id":34,"descricao":"teste2","tamanho":"teste","cor":"teste","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"}]} 
  </msg>
-<msg timestamp="20220609 01:13:18.459" level="INFO">C:\Users\rachi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'amouramour-api.herokuapp.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220623 00:15:32.067" level="INFO">C:\Users\rachi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'amouramour-api.herokuapp.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220609 01:13:18.475" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220609 01:13:17.750" endtime="20220609 01:13:18.475"/>
+<msg timestamp="20220623 00:15:32.067" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220623 00:15:23.859" endtime="20220623 00:15:32.067"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220609 01:13:18.478" level="INFO">{"count":3,"next":null,"previous":null,"results":[{"id":3,"descricao":"teste","tamanho":"teste","cor":"teste","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"},{"id":4,"descricao":"tamaras","tamanho":"m","cor":"verde","valor_custo":10.0,"valor_venda":50.0,"obs":"nenhuma"},{"id":5,"descricao":"quadros","tamanho":"grande","cor":"verde","valor_custo":50.0,"valor_venda":100.0,"obs":"nenhuma"}]}</msg>
-<status status="PASS" starttime="20220609 01:13:18.475" endtime="20220609 01:13:18.478"/>
+<msg timestamp="20220623 00:15:32.081" level="INFO">{"count":3,"next":null,"previous":null,"results":[{"id":14,"descricao":"Calça Infantil","tamanho":"P","cor":"Verde","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"},{"id":4,"descricao":"Macacão Infantil","tamanho":"P","cor":"Verde","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"},{"id":34,"descricao":"teste2","tamanho":"teste","cor":"teste","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"}]}</msg>
+<status status="PASS" starttime="20220623 00:15:32.067" endtime="20220623 00:15:32.081"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:17.750" endtime="20220609 01:13:18.478"/>
+<status status="PASS" starttime="20220623 00:15:23.858" endtime="20220623 00:15:32.082"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:17.749" endtime="20220609 01:13:18.479"/>
+<status status="PASS" starttime="20220623 00:15:23.856" endtime="20220623 00:15:32.083"/>
 </test>
 <test id="s1-t2" name="Buscar todos os clientes">
 <kw name="Requisitar todos clientes" library="ResourceAPI">
@@ -51,31 +51,31 @@
 <arg>API_AMOUR</arg>
 <arg>Cliente</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20220609 01:13:18.483" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220609 01:13:18.634" level="INFO">GET Request : url=https://amouramour-api.herokuapp.com/Cliente 
+<msg timestamp="20220623 00:15:32.087" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220623 00:15:32.406" level="INFO">GET Request : url=https://amouramour-api.herokuapp.com/Cliente 
  path_url=/Cliente 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20220609 01:13:18.634" level="INFO">GET Response : url=https://amouramour-api.herokuapp.com/Cliente 
+<msg timestamp="20220623 00:15:32.406" level="INFO">GET Response : url=https://amouramour-api.herokuapp.com/Cliente 
  status=200, reason=OK 
- headers={'Connection': 'keep-alive', 'Server': 'gunicorn', 'Date': 'Thu, 09 Jun 2022 04:13:12 GMT', 'Content-Type': 'application/json', 'Vary': 'Accept, Origin, Cookie', 'Allow': 'GET, POST, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '1605', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Via': '1.1 vegur'} 
- body={"count":5,"next":null,"previous":null,"results":[{"id":24,"tipo":178787,"nome":"Luana","cpf_cnpj":"111.522.520-10","data_nascimento":null,"telefone":"(16)55555-6363","email":"teste@teste.com","cep":"11500-00","logradouro":"Rua quatro","numero":null,"bairro":"centro","complemento":null,"cidade":"Passos","uf":"MG","observacoes":null,"ativo":true},{"id":25,"tipo":1,"nome":"Arthur Oliveira","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true},{"id":26,"tipo":1,"nome":"Lucas Henrique","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true},{"id":27,"tipo":1,"nome":"João Freitas Henrique","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true},{"id":28,"tipo":1,"nome":"Marilia Junqueira","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true}]} 
+ headers={'Connection': 'keep-alive', 'Server': 'gunicorn', 'Date': 'Thu, 23 Jun 2022 03:15:32 GMT', 'Content-Type': 'application/json', 'Vary': 'Accept, Origin, Cookie', 'Allow': 'GET, POST, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '2103', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Via': '1.1 vegur'} 
+ body={"count":2,"next":null,"previous":null,"results":[{"id":4,"pedidos":[{"id":14,"produtos":[{"id":14,"descricao":"Calça Infantil","tamanho":"P","cor":"Verde","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"}],"nome_cliente":"João Junqueira","status":"Pagamento realizado","transportadora":"Nova Linea","forma_pagto":"Prazo","parcelas":2,"data_pedido":"2022-06-11","data_entrega":"2022-05-11","obs":"Observação","valor_total_bruto":100.0,"valor_frete":25.5,"desconto":10.0,"valor_total_liquido":90.0,"cliente_id":4,"transportadora_id":14,"forma_pagto_id":14,"status_id":14}],"tipo":1,"nome":"João Junqueira","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":null,"bairro":"bairro novo","complemento":null,"cidade":"Franca","uf":"MG","observacoes":null,"ativo":true},{"id":24,"pedidos":[{"id":24,"produtos":[{"id":4,"descricao":"Macacão Infantil","tamanho":"P","cor":"Verde","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"}],"nome_cliente":"Pedro Junqueira","status":"Pagamento realizado","transportadora":"Nova Linea","forma_pagto":"Prazo","parcelas":2,"data_pedido":"2022-06-11","data_entrega":"2022-05-11","obs":"Observação","valor_total_bruto":100.0,"valor_frete":25.5,"desconto":10.0,"valor_total_liquido":90.0,"cliente_id":24,"transportadora_id":14,"forma_pagto_id":14,"status_id":14},{"id":34,"produtos":[],"nome_cliente":"Pedro Junqueira","status":"Pagamento realizado","transportadora":"Nova Linea","forma_pagto":"Prazo","parcelas":2,"data_pedido":"2022-06-11","data_entrega":"2022-05-15","obs":"Observação","valor_total_bruto":100.0,"valor_frete":25.5,"desconto":10.0,"valor_total_liquido":90.0,"cliente_id":24,"transportadora_id":14,"forma_pagto_id":14,"status_id":14}],"tipo":1,"nome":"Pedro Junqueira","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true}]} 
  </msg>
-<msg timestamp="20220609 01:13:18.634" level="INFO">C:\Users\rachi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'amouramour-api.herokuapp.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220623 00:15:32.407" level="INFO">C:\Users\rachi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'amouramour-api.herokuapp.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220609 01:13:18.634" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220609 01:13:18.483" endtime="20220609 01:13:18.634"/>
+<msg timestamp="20220623 00:15:32.408" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220623 00:15:32.087" endtime="20220623 00:15:32.408"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220609 01:13:18.641" level="INFO">{"count":5,"next":null,"previous":null,"results":[{"id":24,"tipo":178787,"nome":"Luana","cpf_cnpj":"111.522.520-10","data_nascimento":null,"telefone":"(16)55555-6363","email":"teste@teste.com","cep":"11500-00","logradouro":"Rua quatro","numero":null,"bairro":"centro","complemento":null,"cidade":"Passos","uf":"MG","observacoes":null,"ativo":true},{"id":25,"tipo":1,"nome":"Arthur Oliveira","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true},{"id":26,"tipo":1,"nome":"Lucas Henrique","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true},{"id":27,"tipo":1,"nome":"João Freitas Henrique","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true},{"id":28,"tipo":1,"nome":"Marilia Junqueira","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true}]}</msg>
-<status status="PASS" starttime="20220609 01:13:18.634" endtime="20220609 01:13:18.641"/>
+<msg timestamp="20220623 00:15:32.411" level="INFO">{"count":2,"next":null,"previous":null,"results":[{"id":4,"pedidos":[{"id":14,"produtos":[{"id":14,"descricao":"Calça Infantil","tamanho":"P","cor":"Verde","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"}],"nome_cliente":"João Junqueira","status":"Pagamento realizado","transportadora":"Nova Linea","forma_pagto":"Prazo","parcelas":2,"data_pedido":"2022-06-11","data_entrega":"2022-05-11","obs":"Observação","valor_total_bruto":100.0,"valor_frete":25.5,"desconto":10.0,"valor_total_liquido":90.0,"cliente_id":4,"transportadora_id":14,"forma_pagto_id":14,"status_id":14}],"tipo":1,"nome":"João Junqueira","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":null,"bairro":"bairro novo","complemento":null,"cidade":"Franca","uf":"MG","observacoes":null,"ativo":true},{"id":24,"pedidos":[{"id":24,"produtos":[{"id":4,"descricao":"Macacão Infantil","tamanho":"P","cor":"Verde","valor_custo":10.0,"valor_venda":20.0,"obs":"teste"}],"nome_cliente":"Pedro Junqueira","status":"Pagamento realizado","transportadora":"Nova Linea","forma_pagto":"Prazo","parcelas":2,"data_pedido":"2022-06-11","data_entrega":"2022-05-11","obs":"Observação","valor_total_bruto":100.0,"valor_frete":25.5,"desconto":10.0,"valor_total_liquido":90.0,"cliente_id":24,"transportadora_id":14,"forma_pagto_id":14,"status_id":14},{"id":34,"produtos":[],"nome_cliente":"Pedro Junqueira","status":"Pagamento realizado","transportadora":"Nova Linea","forma_pagto":"Prazo","parcelas":2,"data_pedido":"2022-06-11","data_entrega":"2022-05-15","obs":"Observação","valor_total_bruto":100.0,"valor_frete":25.5,"desconto":10.0,"valor_total_liquido":90.0,"cliente_id":24,"transportadora_id":14,"forma_pagto_id":14,"status_id":14}],"tipo":1,"nome":"Pedro Junqueira","cpf_cnpj":"12345678","data_nascimento":"2000-02-09","telefone":"35984562541","email":"teste@teste.com","cep":"37904567","logradouro":"Rua teste","numero":"120","bairro":"bairro novo","complemento":"comple","cidade":"Franca","uf":"MG","observacoes":"Obs","ativo":true}]}</msg>
+<status status="PASS" starttime="20220623 00:15:32.409" endtime="20220623 00:15:32.411"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:18.482" endtime="20220609 01:13:18.641"/>
+<status status="PASS" starttime="20220623 00:15:32.086" endtime="20220623 00:15:32.411"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:18.481" endtime="20220609 01:13:18.642"/>
+<status status="PASS" starttime="20220623 00:15:32.084" endtime="20220623 00:15:32.412"/>
 </test>
 <test id="s1-t3" name="Buscar todas Formas de Pagamento">
 <kw name="Requisitar todas Formas de Pagamento" library="ResourceAPI">
@@ -84,66 +84,66 @@
 <arg>API_AMOUR</arg>
 <arg>FormaPagto</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20220609 01:13:18.646" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220609 01:13:18.791" level="INFO">GET Request : url=https://amouramour-api.herokuapp.com/FormaPagto 
+<msg timestamp="20220623 00:15:32.415" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220623 00:15:32.615" level="INFO">GET Request : url=https://amouramour-api.herokuapp.com/FormaPagto 
  path_url=/FormaPagto 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20220609 01:13:18.791" level="INFO">GET Response : url=https://amouramour-api.herokuapp.com/FormaPagto 
+<msg timestamp="20220623 00:15:32.615" level="INFO">GET Response : url=https://amouramour-api.herokuapp.com/FormaPagto 
  status=200, reason=OK 
- headers={'Connection': 'keep-alive', 'Server': 'gunicorn', 'Date': 'Thu, 09 Jun 2022 04:13:12 GMT', 'Content-Type': 'application/json', 'Vary': 'Accept, Origin, Cookie', 'Allow': 'GET, POST, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '95', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Via': '1.1 vegur'} 
- body={"count":1,"next":null,"previous":null,"results":[{"id":1,"descricao":"A vista","parcelas":3}]} 
+ headers={'Connection': 'keep-alive', 'Server': 'gunicorn', 'Date': 'Thu, 23 Jun 2022 03:15:32 GMT', 'Content-Type': 'application/json', 'Vary': 'Accept, Origin, Cookie', 'Allow': 'GET, POST, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '184', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Via': '1.1 vegur'} 
+ body={"count":3,"next":null,"previous":null,"results":[{"id":14,"descricao":"Prazo","parcelas":2},{"id":24,"descricao":"A vista","parcelas":1},{"id":34,"descricao":"A vista","parcelas":3}]} 
  </msg>
-<msg timestamp="20220609 01:13:18.791" level="INFO">C:\Users\rachi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'amouramour-api.herokuapp.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220623 00:15:32.615" level="INFO">C:\Users\rachi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'amouramour-api.herokuapp.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220609 01:13:18.791" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220609 01:13:18.646" endtime="20220609 01:13:18.791"/>
+<msg timestamp="20220623 00:15:32.617" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220623 00:15:32.415" endtime="20220623 00:15:32.617"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220609 01:13:18.791" level="INFO">{"count":1,"next":null,"previous":null,"results":[{"id":1,"descricao":"A vista","parcelas":3}]}</msg>
-<status status="PASS" starttime="20220609 01:13:18.791" endtime="20220609 01:13:18.791"/>
+<msg timestamp="20220623 00:15:32.619" level="INFO">{"count":3,"next":null,"previous":null,"results":[{"id":14,"descricao":"Prazo","parcelas":2},{"id":24,"descricao":"A vista","parcelas":1},{"id":34,"descricao":"A vista","parcelas":3}]}</msg>
+<status status="PASS" starttime="20220623 00:15:32.617" endtime="20220623 00:15:32.619"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:18.645" endtime="20220609 01:13:18.800"/>
+<status status="PASS" starttime="20220623 00:15:32.415" endtime="20220623 00:15:32.619"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:18.642" endtime="20220609 01:13:18.800"/>
+<status status="PASS" starttime="20220623 00:15:32.414" endtime="20220623 00:15:32.620"/>
 </test>
-<test id="s1-t4" name="Requisitar todas Transportadoras">
+<test id="s1-t4" name="Buscar todas Transportadoras">
 <kw name="Requisitar todas Transportadoras" library="ResourceAPI">
 <kw name="Get Request" library="RequestsLibrary">
 <var>${RESPOSTA}</var>
 <arg>API_AMOUR</arg>
 <arg>Transportadora</arg>
 <doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
-<msg timestamp="20220609 01:13:18.804" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220609 01:13:18.952" level="INFO">GET Request : url=https://amouramour-api.herokuapp.com/Transportadora 
+<msg timestamp="20220623 00:15:32.625" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220623 00:15:32.819" level="INFO">GET Request : url=https://amouramour-api.herokuapp.com/Transportadora 
  path_url=/Transportadora 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20220609 01:13:18.952" level="INFO">GET Response : url=https://amouramour-api.herokuapp.com/Transportadora 
+<msg timestamp="20220623 00:15:32.820" level="INFO">GET Response : url=https://amouramour-api.herokuapp.com/Transportadora 
  status=200, reason=OK 
- headers={'Connection': 'keep-alive', 'Server': 'gunicorn', 'Date': 'Thu, 09 Jun 2022 04:13:13 GMT', 'Content-Type': 'application/json', 'Vary': 'Accept, Origin, Cookie', 'Allow': 'GET, POST, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '86', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Via': '1.1 vegur'} 
- body={"count":1,"next":null,"previous":null,"results":[{"id":1,"nome":"Terceiro Milenio"}]} 
+ headers={'Connection': 'keep-alive', 'Server': 'gunicorn', 'Date': 'Thu, 23 Jun 2022 03:15:32 GMT', 'Content-Type': 'application/json', 'Vary': 'Accept, Origin, Cookie', 'Allow': 'GET, POST, HEAD, OPTIONS', 'X-Frame-Options': 'DENY', 'Content-Length': '180', 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Via': '1.1 vegur'} 
+ body={"count":4,"next":null,"previous":null,"results":[{"id":4,"nome":"Rodonaves"},{"id":14,"nome":"Nova Linea"},{"id":24,"nome":"Uau Transportes"},{"id":34,"nome":"Vixe Transportes"}]} 
  </msg>
-<msg timestamp="20220609 01:13:18.952" level="INFO">C:\Users\rachi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'amouramour-api.herokuapp.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+<msg timestamp="20220623 00:15:32.820" level="INFO">C:\Users\rachi\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'amouramour-api.herokuapp.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(</msg>
-<msg timestamp="20220609 01:13:18.952" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220609 01:13:18.804" endtime="20220609 01:13:18.952"/>
+<msg timestamp="20220623 00:15:32.822" level="INFO">${RESPOSTA} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220623 00:15:32.625" endtime="20220623 00:15:32.822"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESPOSTA.text}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220609 01:13:18.961" level="INFO">{"count":1,"next":null,"previous":null,"results":[{"id":1,"nome":"Terceiro Milenio"}]}</msg>
-<status status="PASS" starttime="20220609 01:13:18.952" endtime="20220609 01:13:18.961"/>
+<msg timestamp="20220623 00:15:32.825" level="INFO">{"count":4,"next":null,"previous":null,"results":[{"id":4,"nome":"Rodonaves"},{"id":14,"nome":"Nova Linea"},{"id":24,"nome":"Uau Transportes"},{"id":34,"nome":"Vixe Transportes"}]}</msg>
+<status status="PASS" starttime="20220623 00:15:32.823" endtime="20220623 00:15:32.825"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:18.802" endtime="20220609 01:13:18.961"/>
+<status status="PASS" starttime="20220623 00:15:32.623" endtime="20220623 00:15:32.826"/>
 </kw>
-<status status="PASS" starttime="20220609 01:13:18.802" endtime="20220609 01:13:18.962"/>
+<status status="PASS" starttime="20220623 00:15:32.622" endtime="20220623 00:15:32.826"/>
 </test>
-<status status="PASS" starttime="20220609 01:13:16.989" endtime="20220609 01:13:18.965"/>
+<status status="PASS" starttime="20220623 00:15:22.894" endtime="20220623 00:15:32.831"/>
 </suite>
 <statistics>
 <total>
@@ -156,9 +156,9 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220609 01:13:17.750" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220609 01:13:18.483" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220609 01:13:18.646" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
-<msg timestamp="20220609 01:13:18.804" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220623 00:15:23.859" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220623 00:15:32.087" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220623 00:15:32.415" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg timestamp="20220623 00:15:32.625" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
 </errors>
 </robot>
