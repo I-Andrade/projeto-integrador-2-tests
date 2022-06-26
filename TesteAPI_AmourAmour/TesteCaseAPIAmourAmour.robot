@@ -16,3 +16,5 @@ Buscar todas Formas de Pagamento
 Buscar todas Transportadoras
     Requisitar todas Transportadoras
 
+Buscar todos Pedidos
+    Requisitar todos Pedidos
